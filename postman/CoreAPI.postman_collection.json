@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "d50482b6-64c5-4f98-92b7-b16209d93566",
+		"name": "CoreAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Username",
+							"value": "user4211",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "demo",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost/api/user/auth"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjExIiwibmJmIjoxNTgzNDk4NTM0LCJleHAiOjE1ODQxMDMzMzQsImlhdCI6MTU4MzQ5ODUzNH0.2DDYtqN6zp2auGguDRLsCWEj1WTuCv4L0iAS4NTBXi0"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Username",
+							"value": "user2000",
+							"type": "text"
+						},
+						{
+							"key": "Password",
+							"value": "notdemo",
+							"type": "text"
+						},
+						{
+							"key": "Role",
+							"value": "USER",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost/api/user"
+			},
+			"response": []
+		}
+	]
+}
